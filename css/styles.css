@@ -602,7 +602,10 @@ progress {
   max-width: 100%;
   height: auto;
 }
-
+.img-fluid-profile {
+  width: 100px;
+  height: 100px;
+}
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -3617,6 +3620,7 @@ textarea.form-control-lg {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  background-color: #323539;
 }
 
 .nav-link {
@@ -3752,7 +3756,8 @@ textarea.form-control-lg {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+  padding-top: 5px; /* Atur padding atas */
+  padding-bottom: 5px; /* Atur padding bawah */;
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -10876,8 +10881,8 @@ p {
 }
 
 #mainNav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0,5rem;
+  padding-bottom: 0,5rem;
   background-color: #212529;
 }
 #mainNav .navbar-toggler {
@@ -10991,6 +10996,12 @@ header.masthead .masthead-heading {
   margin-left: auto;
   margin-right: auto;
 }
+#portfolio .portfolio-item-gallery {
+  max-width: 26rem;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0.5rem solid rgb(253, 215, 3);
+} 
 #portfolio .portfolio-item .portfolio-link {
   position: relative;
   display: block;
@@ -11243,7 +11254,7 @@ header.masthead .masthead-heading {
 .team-member img {
   width: 20rem;
   height: 15rem;
-  border: 0.5rem solid rgba(0, 0, 0, 0.1);
+  border: 0.5rem solid rgb(253, 215, 3);
 }
 .team-member h4, .team-member .h4 {
   margin-top: 1.5rem;
